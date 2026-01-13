@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:15
+    container_name: sale_alert_postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: salealert
+      POSTGRES_PASSWORD: salealert
+      POSTGRES_DB: salealertdb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

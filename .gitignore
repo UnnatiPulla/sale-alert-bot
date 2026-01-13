@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDEs
+.idea/
+
+# OS files
+.DS_Store
+
+# Environment variables / secrets
+.env
+
+# Alembic
+alembic/*.pyc
+
+# Node (future frontend)
+node_modules/
